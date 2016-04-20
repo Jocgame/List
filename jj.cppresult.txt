@@ -1,0 +1,37 @@
+In file included from cur.cpp:13:0:
+alexandr/jj.cpp:72:45: error: template argument 1 is invalid
+ class Student:public AbstractList<typename T>
+                                             ^
+alexandr/jj.cpp:268:37: warning: friend declaration 'bool foo(T*, T*)' declares a non-template function [-Wnon-template-friend]
+  friend bool foo(T* first, T* second);
+                                     ^
+alexandr/jj.cpp:268:37: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+cur.cpp: In member function 'virtual void ListTest_ListLen_Test::TestBody()':
+cur.cpp:19:39: error: cannot convert 'Student<std::basic_string<char> >*' to 'AbstractList<std::basic_string<char> >*' in initialization
+     AbstractList<string>*l = get_init();
+                                       ^
+cur.cpp: In member function 'virtual void ListTest_DeleteOne_Test::TestBody()':
+cur.cpp:26:40: error: cannot convert 'Student<std::basic_string<char> >*' to 'AbstractList<std::basic_string<char> >*' in initialization
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp: In member function 'virtual void ListTest_AddOne_Test::TestBody()':
+cur.cpp:34:40: error: cannot convert 'Student<std::basic_string<char> >*' to 'AbstractList<std::basic_string<char> >*' in initialization
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp: In member function 'virtual void ListTest_AddAndCheckOne_Test::TestBody()':
+cur.cpp:43:40: error: cannot convert 'Student<std::basic_string<char> >*' to 'AbstractList<std::basic_string<char> >*' in initialization
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp: In member function 'virtual void ListTest_PopOne_Test::TestBody()':
+cur.cpp:51:40: error: cannot convert 'Student<std::basic_string<char> >*' to 'AbstractList<std::basic_string<char> >*' in initialization
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp: In member function 'virtual void ListTest_PushPop_Test::TestBody()':
+cur.cpp:83:40: error: cannot convert 'Student<std::basic_string<char> >*' to 'AbstractList<std::basic_string<char> >*' in initialization
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp: In member function 'virtual void ListTest_PushPop1E3_Test::TestBody()':
+cur.cpp:112:38: error: cannot convert 'Student<std::basic_string<char> >*' to 'AbstractList<std::basic_string<char> >*' in initialization
+   AbstractList<string> *l = get_init();
+                                      ^
+./check.sh: line 24: ./a.out: No such file or directory
