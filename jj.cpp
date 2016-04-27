@@ -77,20 +77,14 @@ public:
 	T huy;
 	int len()
 	{
-		if(this->data!=NULL)
-		{
-		Student*b=new Student;
-		b->next=this->next;
-		b->data=this->data;
-		b->huy=this->huy;
-		this->next=b;
-		}
+		
+		
 		if(this->next==NULL)
 		{
 			return 0;
 	}
 		Student* head=this;
-		head=this;
+	
 		int i=0;
 		while(head->next!=NULL)
 		{
@@ -151,10 +145,7 @@ public:
 	void insert(int index, T data)
 	{
 
-		if(this->next==NULL)
-		{
-			return;
-		}
+		
 
 
 		Student* head=this;
@@ -286,15 +277,17 @@ template<typename T>
     if(*first > *second)
         return true;
     return false;
-}/*
+}
+	/*
 void main()
 {
 	Student<int> *a=new Student<int>(1,89);
 	a->insert(7,6);
-	while(true)
-	{
-		a->insert(7,9);
-		a->remove(1);
-	}
+	a->remove(1);
+	a->remove(1);
+	a->insert(7,6);
+	cout<<a->len()<<endl;
+	
 
-}*/
+}
+*/
