@@ -69,7 +69,7 @@ public :
 
 };
 template<typename T>
-class Student:public AbstractList
+class Student:public AbstractList<T>
 {
 public:
 	Student *next;
