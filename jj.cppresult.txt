@@ -1,7 +1,7 @@
 In file included from cur.cpp:13:0:
-alexandr/jj.cpp:72:45: error: template argument 1 is invalid
- class Student:public AbstractList<typename T>
-                                             ^
+alexandr/jj.cpp:73:1: error: expected class-name before '{' token
+ {
+ ^
 cur.cpp: In member function 'virtual void ListTest_ListLen_Test::TestBody()':
 cur.cpp:19:39: error: cannot convert 'Student<std::basic_string<char> >*' to 'AbstractList<std::basic_string<char> >*' in initialization
      AbstractList<string>*l = get_init();
