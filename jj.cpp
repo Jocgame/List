@@ -77,6 +77,14 @@ public:
 	T huy;
 	int len()
 	{
+		if(this->data!=NULL)
+		{
+		Student*b=new Student;
+		b->next=this->next;
+		b->data=this->data;
+		b->huy=this->huy;
+		this->next=b;
+		}
 		if(this->next==NULL)
 		{
 			return 0;
