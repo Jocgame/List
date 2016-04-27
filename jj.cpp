@@ -265,7 +265,7 @@ public:
     
 	}
 
-	friend bool foo(T* first, T* second);
+//	friend bool foo(T* first, T* second);
 };
 Student<string>* get_init()
 {
