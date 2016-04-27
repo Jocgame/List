@@ -269,7 +269,7 @@ public:
 };
 Student<string>* get_init()
 {
-   Student<string>* init=new Student<string>("Huy");
+   Student<string>* init=new Student<string>("fail");
     return init;
 }
 template<typename T>
